@@ -1,0 +1,39 @@
+/* ---------------mobile version--------------------------- */
+@media screen and (max-width: 768px) and (min-resolution: 2x) {
+  .gallery {
+    padding: 32px 0;
+    background-color: #ebf8ed;
+  }
+  .glr-container {
+    padding: 0 16px;
+  }
+  .glr-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 16px;
+  }
+  .glr-txt {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 32px;
+  }
+  .glr-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .glr-item {
+    border-radius: 32px;
+    overflow: hidden;
+  }
+}
+/* ---------------mobile version--------------------------- */
