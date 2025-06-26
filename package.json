@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/EcoTOte/",
+    "build": "vite build --base=/Project_Alpha/",
     "preview": "vite preview"
   },
   "devDependencies": {
