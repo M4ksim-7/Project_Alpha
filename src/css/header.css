@@ -1,24 +1,31 @@
 .header-container {
     display: flex;
     align-items: center;
-    padding: 0 64px;
+    justify-content: space-between;
+    padding: 23px 64px; 
+    background-color: #75d281;
+    height: 72px;
 }
 
-.header-nav {
+.header-logo {
     display: flex;
     align-items: center;
-}
-
-.header-nav-logo {
-    display: flex;
 }
 
 .header-nav-list {
     display: flex;
     gap: 32px;
+    list-style: none;
 }
 
 .header-address {
     display: flex;
-    margin-left: auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
 }
