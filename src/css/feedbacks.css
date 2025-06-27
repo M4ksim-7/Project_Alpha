@@ -34,7 +34,7 @@
   width: 20px;
   height: 18.89px;
 }
-.feedback-icon-link {
+.icon-star {
   fill: var(--icon-color, #3ac04c);
 }
 .icon-star-no-fill {
@@ -56,4 +56,47 @@
   line-height: 1.6;
   letter-spacing: 0%;
   color: #030a06;
+}
+/* section "Feedback" for tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .section-feedback {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .feedback-list {
+    gap: 32px 24px;
+  }
+  .feedback-item {
+    box-sizing: border-box;
+  }
+  .feedback-icon-wrapper {
+    width: 340px;
+  }
+}
+/* desktop version*/
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+  .feedback-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .feedback-icon-wrapper {
+    width: 310px;
+  }
+  .feedback-title {
+    margin-bottom: 80px;
+  }
+  .feedback-icon-list {
+    margin-bottom: 24px;
+  }
+  .feedback-text {
+    margin-bottom: 24px;
+  }
 }
