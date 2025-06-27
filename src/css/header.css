@@ -2,14 +2,60 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 23px 64px; 
+    padding: 16px 20px;
     background-color: #75d281;
-    height: 72px;
+    max-height: 64px;
 }
-
-.header-logo {
+.burger-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px; 
+    outline: none;
+    box-shadow: none;
+    /* видалення кольорового фону при натисканні на мобільних пристроях */
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.header-nav,
+.header-address {
+    display: none;
+}
+
+                /*================= Mobile Menu ==================*/
+
+
+
+                /*==================== Tablet ====================*/
+
+@media screen and (min-width: 768px) {
+.header-container {
+    padding: 20px 28px 20px 32px;   
+}
+
+.burger-btn,
+.burger-icon {
+    width: 24px;
+    height: 24px;
+}
+}
+
+                /*==================== Desktop ====================*/
+
+@media screen and (min-width: 1440px) {
+.header-container {
+    padding: 23px 64px; 
+    max-height: 72px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
 }
 
 .header-nav-list {
@@ -28,4 +74,10 @@
     display: flex;
     gap: 16px;
     list-style: none;
+    font-style: normal;
+}
+
+.burger-btn {
+    display: none;
+}
 }
