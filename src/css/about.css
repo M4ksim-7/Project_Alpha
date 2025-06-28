@@ -1,0 +1,54 @@
+/** ====== About Section Styles Mob ====== **/
+
+.section-about {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../img/about/about-mob-@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media screen and (min-resolution: 2x) {
+  .section-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about/about-mob-@2x.jpg');
+  }
+}
+
+.container {
+}
+
+.about-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 auto 12px;
+}
+
+.about-title {
+  font-family: Comfortaa, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  margin: 0 auto 20px;
+}
+
+.about-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 0 auto;
+}
+
+.about-text,
+.about-title,
+.about-description {
+  text-align: center;
+  color: #ffffff;
+  max-width: 288px;
+}
