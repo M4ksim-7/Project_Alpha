@@ -1,3 +1,4 @@
 https://github.com/M4ksim-7/Project_Alpha/pull/6
 https://github.com/M4ksim-7/Project_Alpha/pull/13
+https://github.com/M4ksim-7/Project_Alpha/pull/14
 git pull origin assortment-html
