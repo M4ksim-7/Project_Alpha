@@ -182,7 +182,7 @@
 
                 /*==================== Desktop ====================*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1340px) {
 .header-container {
     padding: 23px 64px; 
     max-height: 72px;
