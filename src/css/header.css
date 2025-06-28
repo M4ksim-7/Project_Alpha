@@ -6,6 +6,7 @@
     background-color: #75d281;
     max-height: 64px;
 }
+
 .burger-btn {
     background: transparent;
     border: none;
@@ -18,9 +19,29 @@
     height: 32px; 
     outline: none;
     box-shadow: none;
-    fill: #030a06;
     /* видалення кольорового фону при натисканні на мобільних пристроях */
     -webkit-tap-highlight-color: transparent; 
+    transition: transform 0.2s ease;
+}
+
+.burger-btn:active {
+    transform: scale(1.1);
+}
+
+
+.burger-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.header-nav-logo-svg {
+    width: 82px;
+    height: 31px;
+    transition: transform 300ms ease;
+}
+
+.header-nav-logo-svg:active {
+    transform: scale(1.2);
 }
 
 .header-nav,
@@ -38,73 +59,107 @@
     height: 100%;
     z-index: 9999;
     background-color: #75d281;
+    /*----- Анімація------*/
     transform: translateX(100%);
-    transition: transform 600ms ease-in-out;
-    pointer-events: none;
-    visibility: hidden;
     opacity: 0;
-    transition: transform 550ms ease-in-out, opacity 550ms ease-in-out, visibility 550ms ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .mobile-menu.is-open {
     transform: translateX(0);
+    opacity: 1;
+    /*----- Анімація Кінець------*/
     pointer-events: auto;
     visibility: visible;
-    opacity: 1;
 }
 
-.mobile-menu-container {
-    padding: 16px 20px 92px 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
-    justify-content: space-between;
-}
 
 .mobile-close-button {
     display: flex;
-    position: absolute;
     background: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
-    justify-content: center;
-    top: 16px;
-    right: 20px;
     width: 32px;
     height: 32px;
     /* видалення кольорового фону при натисканні на мобільних пристроях */
     -webkit-tap-highlight-color: transparent;
+    transition: transform 0.2s ease;
 }
 
-.mobile-close-icon {
-    width: 32px;
-    height: 32px;
-    fill: #030a06;
+.mobile-close-button:active {
+    transform: rotate(180deg);
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.mobile-menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding-left: 20px;
 }
 
 .mobile-menu-nav-list {
     display: flex;
-    gap: 32px;
-    list-style: none;
     flex-direction: column;
+    gap: 16px;
+    padding: 32px 0 32px 20px;
+}
+
+.mobile-nav-logo-svg {
+    width: 82px;
+    height: auto;
+    /* видалення кольорового фону при натисканні на мобільних пристроях */
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.mobile-nav-logo-svg:active {
+    transform: scale(1.1);
+}
+
+.mobile-menu-address-container {
+    display: flex;
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .mobile-menu-address-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    list-style: none;
     font-style: normal;
+    gap: 16px;
 }
 
                 /*==================== Tablet ====================*/
 
 @media screen and (min-width: 768px) {
 .header-container {
-    padding: 20px 28px 20px 32px;   
+    padding: 20px 28px 20px 32px;
+}
+
+.mobile-menu-container {
+    padding: 0 16px 0 32px;
+}
+
+.mobile-menu-top {
+    padding-left: 0px;
+}
+
+.mobile-menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
 }
 
 .burger-btn,
@@ -112,7 +167,18 @@
     width: 24px;
     height: 24px;
 }
+
+.mobile-menu-address-container {
+    display: flex;
+    margin-top: 0px;
+    padding-left: 0px;
 }
+}
+
+                /*================= Mobile Menu End  ==================*/
+
+
+
 
                 /*==================== Desktop ====================*/
 
@@ -120,6 +186,11 @@
 .header-container {
     padding: 23px 64px; 
     max-height: 72px;
+}
+
+.header-nav-logo-svg {
+    width: 104px;
+    height: 39px;
 }
 
 .header-nav {
@@ -133,10 +204,23 @@
     list-style: none;
 }
 
+.header-nav-item {
+    transition: transform 0.3s ease;
+}
+
+.header-nav-item:hover {
+    transform: scale(1.08);
+}
+
+.header-nav-item:active {
+    transform: scale(1.02);
+}
+
 .header-address {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 
 .header-address-list {
@@ -144,6 +228,18 @@
     gap: 16px;
     list-style: none;
     font-style: normal;
+}
+
+.header-address-item {
+    transition: transform 0.3s ease;
+}
+
+.header-address-item:hover {
+    transform: scale(1.08);
+}
+
+.header-address-item:active {
+    transform: scale(1.02);
 }
 
 .burger-btn,
