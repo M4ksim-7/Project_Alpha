@@ -134,14 +134,15 @@
 }
 
 .image-form {
-    background-image: url(../images/1x/form-image-mob.jpg);
+    background-image: url(../img/support/1x/form-image-mob.jpg);
     border-radius: 40px;
     height: 428px;
+    background-size: cover;
 }
 
 @media screen and (min-resolution: 2x) {
     .image-form {
-        background-image: url(../images/2x/form-image-mob@2x.jpg);
+        background-image: url(../img/support/2x/form-image-mob@2x.jpg);
         background-size: cover;
     }
 }
@@ -151,7 +152,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .section-seven {
+    .section-support {
         width: 768px;
         padding: 64px 32px;
     }
@@ -169,12 +170,12 @@
     }
 
     .image-form {
-        background-image: url(../images/1x/form-image-tab.jpg);
+        background-image: url(../img/support/1x/form-image-tab.jpg);
     }
 
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../images/2x/form-image-tab@2x.jpg);
+            background-image: url(../img/support/2x/form-image-tab@2x.jpg);
         }
     }
 }
@@ -183,7 +184,7 @@
 
 @media screen and (min-width: 1440px) {
 
-    .section-seven {
+    .section-support {
         width: 1440px;
         padding: 64px;
         display: flex;
@@ -212,14 +213,14 @@
     }
 
     .image-form {
-        background-image: url(../images/1x/form-image-desk.jpg);
+        background-image: url(../img/support/1x/form-image-desk.jpg);
         width: 644px;
         height: 767px;
     }
 
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../images/2x/form-image-desk@2x.jpg);
+            background-image: url(../img/support/2x/form-image-desk@2x.jpg);
         }
     }
 
