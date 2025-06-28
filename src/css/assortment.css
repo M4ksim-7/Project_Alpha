@@ -16,8 +16,8 @@
 .section-assortment .container-assortment .asort-sectiom-list {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    align-items: center;
 
     gap: 40px;
 }
@@ -116,5 +116,27 @@
     }
     .asort-sectiom-list .asort-card .text-box .buy-btn {
         width: 340px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .section-assortment .container-assortment .title {
+        font-size: 48px;
+    }
+
+    .section-assortment .container-assortment .asort-sectiom-list .asort-card {
+        width: 310px;
+        height: 557px;
+    }
+
+    .section-assortment .container-assortment .asort-sectiom-list {
+        row-gap: 64px;
+
+        min-width: calc((100% - 72px) / 4);
+    }
+
+    .asort-sectiom-list .asort-card .text-box .buy-btn {
+        width: 310px;
     }
 }
