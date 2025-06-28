@@ -19,10 +19,7 @@
   }
 }
 
-.container {
-}
-
-.about-text {
+.about-subtitle {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -45,7 +42,7 @@
   margin: 0 auto;
 }
 
-.about-text,
+.about-subtitle,
 .about-title,
 .about-description {
   text-align: center;
