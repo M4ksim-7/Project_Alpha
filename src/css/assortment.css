@@ -3,21 +3,12 @@
     padding-bottom: 32px;
 }
 
-.section-assortment .container-assortment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-assortment .container-assortment .title {
     font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #030a06;
 
     margin-bottom: 32px;
 }
@@ -25,7 +16,7 @@
 .section-assortment .container-assortment .asort-sectiom-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     justify-content: center;
 
     gap: 40px;
@@ -34,9 +25,8 @@
 .section-assortment .container-assortment .asort-sectiom-list .asort-card {
     display: flex;
     width: 288px;
-    max-height: 530px;
+    height: 530px;
     flex-wrap: wrap;
-    justify-content: center;
 
     gap: 16px;
 }
@@ -49,35 +39,25 @@
 .asort-sectiom-list .asort-card .text-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .asort-sectiom-list .asort-card .text-box .sub-title {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 600;
     font-size: 18px;
-    line-height: 1.6;
     text-align: center;
-    color: #030a06;
 }
 
 .asort-sectiom-list .asort-card .text-box .desc {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
     font-size: 14px;
     text-align: center;
-    color: #030a06;
 
     margin-bottom: 8px;
 }
 
 .asort-sectiom-list .asort-card .text-box .price {
-    font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-    color: #030a06;
 
     margin-bottom: 16px;
 }
@@ -113,4 +93,27 @@
     color: #113916;
     border: transparent;
     background: transparent;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .section-assortment .container-assortment .asort-sectiom-list .asort-card {
+        width: 340px;
+        height: 593px;
+    }
+    .section-assortment .container-assortment .asort-sectiom-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+
+        column-gap: 24px;
+        row-gap: 24px;
+        min-width: calc((100% - 24px) / 2);
+    }
+    .asort-sectiom-list .asort-card .text-box .price {
+        margin-bottom: auto;
+    }
+    .asort-sectiom-list .asort-card .text-box .buy-btn {
+        width: 340px;
+    }
 }
