@@ -1,0 +1,227 @@
+.section-support {
+    width: 320px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.form-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.form-subtitle {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-bottom: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-label {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    color: #030a06;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    color: rgba(3, 10, 6, 0.6);
+    background-color: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    border-radius: 6px;
+    min-width: 288px;
+    padding: 8px 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+}
+
+.form-input:hover::placeholder {
+    color: #030a06;
+}
+
+.form-input:focus::placeholder {
+    color: transparent;
+}
+
+.form-input:focus {
+    color: #030a06;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+    border-color: #d64040;
+    color: #d64040;
+}
+
+.form-input:not(:placeholder-shown):valid {
+    border-color: #008000;
+}
+
+.form-input:not(:placeholder-shown):invalid~.text-invalid,
+.form-input:not(:placeholder-shown):valid~.text-valid {
+    display: block;
+}
+
+.text-invalid,
+.text-valid {
+    display: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.text-valid {
+    color: #008000;
+}
+
+.text-invalid {
+    color: #d64040;
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-textarea {
+    min-height: 180px;
+    min-width: 288px;
+}
+
+.button-form {
+    border: 1px solid #113916;
+    background-color: #113916;
+    opacity: 0.6;
+    border-radius: 6px;
+    width: 288px;
+    height: 50px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: transparent;
+    color: #113916;
+}
+
+.button-form:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.image-form {
+    background-image: url(../img/support/1x/form-image-mob.jpg);
+    border-radius: 40px;
+    height: 428px;
+    background-size: cover;
+}
+
+@media screen and (min-resolution: 2x) {
+    .image-form {
+        background-image: url(../img/support/2x/form-image-mob@2x.jpg);
+        background-size: cover;
+    }
+}
+
+
+/* --------------------TABLET-------------------- */
+
+@media screen and (min-width: 768px) {
+
+    .section-support {
+        width: 768px;
+        padding: 64px 32px;
+    }
+
+    .form-input {
+        min-width: 704px;
+    }
+
+    .form-textarea {
+        min-width: 704px;
+    }
+
+    .button-form {
+        width: 249px;
+    }
+
+    .image-form {
+        background-image: url(../img/support/1x/form-image-tab.jpg);
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .image-form {
+            background-image: url(../img/support/2x/form-image-tab@2x.jpg);
+        }
+    }
+}
+
+/* --------------------DESKTOP-------------------- */
+
+@media screen and (min-width: 1440px) {
+
+    .section-support {
+        width: 1440px;
+        padding: 64px;
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .section-form {
+        width: 644px;
+    }
+
+    .form-title {
+        font-size: 48px;
+    }
+
+    .form-input {
+        min-width: 644px;
+    }
+
+    .form-textarea {
+        min-width: 644px;
+    }
+
+    .button-form {
+        width: 198px;
+    }
+
+    .image-form {
+        background-image: url(../img/support/1x/form-image-desk.jpg);
+        width: 644px;
+        height: 767px;
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .image-form {
+            background-image: url(../img/support/2x/form-image-desk@2x.jpg);
+        }
+    }
+
+}
