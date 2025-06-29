@@ -10,7 +10,7 @@
 
 .feedback-title {
   margin-bottom: 32px;
-  font-family: Comfortaa;
+  font-family: 'Comfortaa';
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
@@ -41,7 +41,7 @@
   fill: var(--icon-color, #030a06);
 }
 .feedback-text {
-  font-family: Comfortaa;
+  font-family: 'Comfortaa';
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
@@ -50,11 +50,10 @@
   margin-bottom: 12px;
 }
 .feedback-client-name {
-  font-family: Fira Sans;
+  font-family: 'Fira Sans';
   font-weight: 600;
   font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 0%;
   color: #030a06;
 }
 /* section "Feedback" for tablet */
