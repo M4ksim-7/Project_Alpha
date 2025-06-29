@@ -127,15 +127,16 @@
 }
 
 .image-form {
-    background-image: url(../img/support/1x/form-image-mob.jpg);
+    background-image: url(../img/support/1x/form-image-mob.webp);
     border-radius: 40px;
     height: 428px;
+    max-width: 288px;
     background-size: cover;
 }
 
 @media screen and (min-resolution: 2x) {
     .image-form {
-        background-image: url(../img/support/2x/form-image-mob@2x.jpg);
+        background-image: url(../img/support/2x/form-image-mob@2x.webp);
         background-size: cover;
     }
 }
@@ -162,12 +163,13 @@
     }
 
     .image-form {
-        background-image: url(../img/support/1x/form-image-tab.jpg);
+        background-image: url(../img/support/1x/form-image-tab.webp);
+        max-width: 704px;
     }
 
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../img/support/2x/form-image-tab@2x.jpg);
+            background-image: url(../img/support/2x/form-image-tab@2x.webp);
         }
     }
 }
@@ -207,14 +209,14 @@
     }
 
     .image-form {
-        background-image: url(../img/support/1x/form-image-desk.jpg);
+        background-image: url(../img/support/1x/form-image-desk.webp);
         width: 644px;
         height: 767px;
     }
 
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../img/support/2x/form-image-desk@2x.jpg);
+            background-image: url(../img/support/2x/form-image-desk@2x.webp);
         }
     }
 
