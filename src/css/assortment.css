@@ -1,79 +1,14 @@
-:root {
-  --font-family: "Fira Sans", sans-serif;
-  --second-family: "Comfortaa", sans-serif;
-}
-
-:root {
-	--color-scheme-1-background: var(--color-emerald-lightest);
-	--color-neutral-darkest: #030a06;
-	--color-scheme-1-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-1-text: var(--color-neutral-darkest);
-	--color-neutral-lighter: #d9dad9;
-	--color-white: #fff;
-	--color-neutral-lightest: #f2f2f2;
-	--color-neutral-light: #b3b5b4;
-	--color-neutral: #818482;
-	--color-neutral-dark: #4e5350;
-	--color-neutral-darker: #1c221e;
-	--opacity-transparent: rgba(255, 255, 255, 0);
-	--color-scheme-1-foreground: var(--color-emerald-lighter);
-	--color-scheme-1-accent: var(--color-neutral-darkest);
-	--opacity-white-5: rgba(255, 255, 255, 0.05);
-	--opacity-white-10: rgba(255, 255, 255, 0.1);
-	--opacity-white-15: rgba(255, 255, 255, 0.15);
-	--opacity-white-20: rgba(255, 255, 255, 0.2);
-	--opacity-white-30: rgba(255, 255, 255, 0.3);
-	--opacity-white-40: rgba(255, 255, 255, 0.4);
-	--opacity-white-50: rgba(255, 255, 255, 0.5);
-	--opacity-white-60: rgba(255, 255, 255, 0.6);
-	--opacity-neutral-darkest-5: rgba(3, 10, 6, 0.05);
-	--opacity-neutral-darkest-10: rgba(3, 10, 6, 0.1);
-	--opacity-neutral-darkest-15: rgba(3, 10, 6, 0.15);
-	--opacity-neutral-darkest-20: rgba(3, 10, 6, 0.2);
-	--opacity-neutral-darkest-30: rgba(3, 10, 6, 0.3);
-	--opacity-neutral-darkest-40: rgba(3, 10, 6, 0.4);
-	--opacity-neutral-darkest-50: rgba(3, 10, 6, 0.5);
-	--opacity-neutral-darkest-60: rgba(3, 10, 6, 0.6);
-	--color-emerald-lightest: #ebf8ed;
-	--color-emerald-lighter: #d7f2db;
-	--color-emerald-light: #75d281;
-	--color-emerald: #3ac04c;
-	--color-emerald-dark: #2e993c;
-	--color-emerald-darker: #174c1e;
-	--color-emerald-darkest: #113916;
-	--color-scheme-2-text: var(--color-neutral-darkest);
-	--color-scheme-2-background: var(--color-emerald-light);
-	--color-scheme-2-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-2-accent: var(--color-neutral-darkest);
-	--color-scheme-2-foreground: var(--color-emerald);
-	--color-scheme-3-text: var(--color-neutral-darkest);
-	--color-scheme-3-background: var(--color-white);
-	--color-scheme-3-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-3-accent: var(--color-neutral-darkest);
-	--color-scheme-3-foreground: var(--color-neutral-lightest);
-	--color-error-red: #d64040;
-}
-
 .section-assortment {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.section-assortment .container-assortment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-assortment .container-assortment .title {
-    font-family: var(--second-family);
-    font-weight: 700;
+    font-family: "Comfortaa", sans-serif;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: var(--color-scheme-1-text);
 
     margin-bottom: 32px;
 }
@@ -81,8 +16,8 @@
 .section-assortment .container-assortment .asort-sectiom-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     gap: 40px;
 }
@@ -90,9 +25,8 @@
 .section-assortment .container-assortment .asort-sectiom-list .asort-card {
     display: flex;
     width: 288px;
-    max-height: 530px;
+    height: 530px;
     flex-wrap: wrap;
-    justify-content: center;
 
     gap: 16px;
 }
@@ -105,51 +39,104 @@
 .asort-sectiom-list .asort-card .text-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .asort-sectiom-list .asort-card .text-box .sub-title {
-    font-family: var(--font-family);
-    font-weight: 600;
     font-size: 18px;
-    line-height: 1.6;
+    font-weight: 600;
     text-align: center;
-    color: var(--color-scheme-1-text);
 }
 
 .asort-sectiom-list .asort-card .text-box .desc {
-    font-family: var(--font-family);
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.6;
     text-align: center;
-    color: var(--color-scheme-1-text);
 
     margin-bottom: 8px;
 }
 
 .asort-sectiom-list .asort-card .text-box .price {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.6;
     text-align: center;
-    color: var(--color-scheme-1-text);
 
     margin-bottom: 16px;
 }
 
 .asort-sectiom-list .asort-card .text-box .buy-btn {
-    font-family: var(--font-family);
+    font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.6;
-    color: var(--color-neutral-darkest);
+    color: #fff;
 
-    border: 1px solid var(--color-neutral-darkest);
+    border: 1px solid #113916;
+    background: #113916;
+    opacity: 0.6;
+
     border-radius: 6px;
     padding: 8px 20px;
     width: 288px;
     height: 40px;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.asort-sectiom-list .asort-card .text-box .buy-btn:hover,
+.asort-sectiom-list .asort-card .text-box .buy-btn:focus {
+    color: #113916;
+    background: transparent;
+}
+
+.asort-sectiom-list .asort-card .text-box .buy-btn:active {
+    color: #113916;
+    border: transparent;
+    background: transparent;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .section-assortment .container-assortment .asort-sectiom-list .asort-card {
+        width: 340px;
+        height: 593px;
+    }
+    .section-assortment .container-assortment .asort-sectiom-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+
+        column-gap: 24px;
+        row-gap: 24px;
+        min-width: calc((100% - 24px) / 2);
+    }
+    .asort-sectiom-list .asort-card .text-box .price {
+        margin-bottom: auto;
+    }
+    .asort-sectiom-list .asort-card .text-box .buy-btn {
+        width: 340px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+    .section-assortment .container-assortment .title {
+        font-size: 48px;
+    }
+
+    .section-assortment .container-assortment .asort-sectiom-list .asort-card {
+        width: 310px;
+        height: 557px;
+    }
+
+    .section-assortment .container-assortment .asort-sectiom-list {
+        row-gap: 64px;
+
+        min-width: calc((100% - 72px) / 4);
+    }
+
+    .asort-sectiom-list .asort-card .text-box .buy-btn {
+        width: 310px;
+    }
 }
