@@ -9,47 +9,104 @@
     </p>
     <ul class="advantages-list">
       <li class="advantages-item">
-        <img
-          class="advantages-img"
-          srcset="
-            ../img/advantages/img1-mob.jpg    1x,
-            ../img/advantages/img1-mob@2x.jpg 2x
-          "
-          src="../img/advantages/img1-mob.jpg"
-          alt="органічні матеріали"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/advantages/img1-desc.jpg    1x,
+              /img/advantages/img1-desc@2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img1-tab.jpg    1x,
+              /img/advantages/img1-tab@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img1-mob.jpg    1x,
+              /img/advantages/img1-mob@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="advantages-img"
+            src="/img/advantages/img1-mob.jpg"
+            alt="органічні матеріали"
+          />
+        </picture>
         <h3 class="advantages-item-subtitle">Стійкість та екологічність</h3>
         <p class="advantages-item-text">
           Виготовлені з органічної бавовни та переробленого пластику.
         </p>
       </li>
 
-      <li>
-        <img
-          class="advantages-img"
-          srcset="
-            ../img/advantages/img2-mob.jpg    1x,
-            ../img/advantages/img2-mob@2x.jpg 2x
-          "
-          src="../img/advantages/img2-mob.jpg"
-          alt="ручне шиття"
-        />
+      <li class="advantages-item">
+        <picture>
+          <source
+            srcset="
+              /img/advantages/img2-desc.jpg    1x,
+              /img/advantages/img2-desc@2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img2-tab.jpg    1x,
+              /img/advantages/img2-tab@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img2-mob.jpg    1x,
+              /img/advantages/img2-mob@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="advantages-img"
+            src="/img/advantages/img2-tab.jpg"
+            alt="ручне шиття"
+          />
+        </picture>
         <h3 class="advantages-item-subtitle">Міцність і довговічність</h3>
         <p class="advantages-item-text">
           Наші сумки мають посилені шви для тривалого використання.
         </p>
       </li>
 
-      <li>
-        <img
-          class="advantages-img"
-          srcset="
-            ../img/advantages/img3-mob.jpg    1x,
-            ../img/advantages/img3-mob@2x.jpg 2x
-          "
-          src="../img/advantages/img3-mob.jpg"
-          alt="модні еко-сумки"
-        />
+      <li class="advantages-item">
+        <picture>
+          <source
+            srcset="
+              /img/advantages/img3-desc.jpg    1x,
+              /img/advantages/img3-desc@2x.jpg 2x
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img3-tab.jpg    1x,
+              /img/advantages/img3-tab@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              /img/advantages/img3-mob.jpg    1x,
+              /img/advantages/img3-mob@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            class="advantages-img last"
+            src="/img/advantages/img3-desc.jpg"
+            alt="модні еко-сумки"
+          />
+        </picture>
         <h3 class="advantages-item-subtitle">Стильний та сучасний дизайн</h3>
         <p class="advantages-item-text">
           Мінімалістичні моделі в обмежених серіях для кожного стилю.
