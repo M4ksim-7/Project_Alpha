@@ -5,7 +5,6 @@
 
 .footer-container {
   padding: 0 20px;
-
 }
 
 .footer-navigation {
@@ -13,7 +12,7 @@
   flex-direction: column;
   gap: 48px;
   align-items: center;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .footer-logo {
@@ -60,6 +59,7 @@
   font-size: 14px;
 }
 
+
 @media only screen and (min-width: 768px) {
 
 .footer {
@@ -72,7 +72,7 @@
 
 .footer-navigation {
   gap: 32px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .footer-logo {
@@ -103,7 +103,35 @@
 }
 
 
-
 @media only screen and (min-width: 1440px) {
+
+
+.footer {
+  padding: 80px 0;
+}
+
+.footer-container {
+  padding: 0 64px;
+}
+
+.footer-navigation {
+  flex-direction: row;
+  gap:unset;
+  padding-bottom: 52px;
+  
+}
+
+.footer-logo {
+  margin-right: 208px;
+}
+
+.footer-socials {
+  margin-left: auto;
+}
+
+.footer-social-icon {
+  width: 25px;
+  height: 25px;
+}
 
 }
