@@ -1,14 +1,3 @@
-body {
-  font-family: 'Fira Sans', sans-serif;
-  color: #030a06;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 .advantages {
   padding: 32px 0;
 }
@@ -21,6 +10,7 @@ body {
 }
 
 .advantages-title {
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -49,6 +39,7 @@ body {
 }
 
 .advantages-item-subtitle {
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.4;
