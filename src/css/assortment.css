@@ -32,6 +32,7 @@
 }
 
 .asort-sectiom-list .asort-card .image-box {
+    height: 346px;
     border-radius: 32px;
     overflow: hidden;
 }
@@ -108,6 +109,11 @@
         width: 340px;
         height: 593px;
     }
+
+    .asort-sectiom-list .asort-card .image-box {
+        height: 408px
+    }
+
     .section-assortment .container-assortment .asort-sectiom-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -117,9 +123,11 @@
         row-gap: 24px;
         min-width: calc((100% - 24px) / 2);
     }
+
     .asort-sectiom-list .asort-card .text-box .price {
         margin-bottom: auto;
     }
+
     .asort-sectiom-list .asort-card .text-box .buy-btn {
         width: 340px;
     }
@@ -129,6 +137,10 @@
 @media screen and (min-width: 1440px) {
     .section-assortment .container-assortment .title {
         font-size: 48px;
+    }
+
+    .asort-sectiom-list .asort-card .image-box {
+        height: 372px
     }
 
     .section-assortment .container-assortment .asort-sectiom-list .asort-card {
