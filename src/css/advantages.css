@@ -122,16 +122,12 @@
     font-size: 48px;
   }
 
-  .advantages-list {
-  }
-
   .advantages-item {
     width: 421px;
     /* width: calc((100% -24px) / 2); */
   }
 
   .advantages-item:last-child {
-    width: inherit;
     width: 421px;
   }
 
