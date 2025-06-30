@@ -5,7 +5,7 @@
   padding-bottom: 64px;
   background-color: #000000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/about/about-mob-@1x.jpg');
+    url('../img/about/about-mob-@1x.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,8 +15,12 @@
 @media screen and (min-resolution: 2x) {
   .section-about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../img/about/about-mob-@2x.jpg');
+      url('../img/about/about-mob-@2x.webp');
   }
+}
+
+.about-container {
+  max-width: 288px;
 }
 
 .about-subtitle {
@@ -44,5 +48,74 @@
 .about-description {
   text-align: center;
   color: #ffffff;
-  max-width: 288px;
+}
+
+/** ========= Media 768px ========= */
+
+@media screen and (min-width: 768px) {
+  /* ===== media About Tablet ===== */
+
+  .section-about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about/about-tab-@1x.webp');
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .section-about {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/about/about-tab-@2x.webp');
+    }
+  }
+
+  .container.about-container {
+    max-width: 573px;
+  }
+}
+
+/** ======= Media 1440px ======= */
+
+@media screen and (min-width: 1440px) {
+  /* ===== media About Desktop ===== */
+
+  .section-about {
+    padding-top: 112px;
+    padding-bottom: 94px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../img/about/about-pc-@1x.webp');
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .section-about {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/about/about-pc-@2x.webp');
+    }
+  }
+
+  .container.about-container {
+    max-width: 701px;
+  }
+
+  .about-title {
+    font-size: 56px;
+  }
+
+  .about-description {
+    font-size: 18px;
+  }
+}
+
+/** ======= Media 768px and 1440px ======= */
+
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  /* ===== media About Tablet and Desktop ===== */
+
+  .about-subtitle {
+    margin: 0 auto 16px;
+  }
+
+  .about-title {
+    margin: 0 auto 24px;
+  }
 }
