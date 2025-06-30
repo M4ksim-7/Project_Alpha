@@ -176,5 +176,64 @@
     display: flex;
     margin-top: 0px;
     padding-left: 0px;
-}  
+}
+}
+    
+            /*====================== Desktop ======================*/
+
+@media screen and (min-width: 1440px) {
+.header {
+    padding: 23px 0;
+}
+
+.header-container {
+    max-height: 72px;
+    padding: 0 64px;
+}
+
+.header-nav-logo-svg {
+    width: 104px;
+    height: 39px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.header-nav-item {
+    transition: transform 0.3s ease;
+}
+
+.header-nav-item:hover {
+    transform: scale(1.01);
+}
+
+.header-nav-item:active {
+    transform: scale(1.02);
+}
+
+.header-address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-address-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    font-style: normal;
+}
+
+.header-address-item {
+    transition: transform 0.3s ease;       
+}
 }
