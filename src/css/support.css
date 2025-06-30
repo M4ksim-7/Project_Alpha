@@ -2,6 +2,10 @@
     padding: 32px 0;
 }
 
+.support-container {
+    max-width: 288px;
+}
+
 .section-form {
     display: flex;
     flex-direction: column;
@@ -146,6 +150,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .support-container {
+    max-width: 768px;
+    }
+
     .section-support {
         padding: 64px 0;
     }
@@ -177,6 +185,10 @@
 /* --------------------DESKTOP-------------------- */
 
 @media screen and (min-width: 1440px) {
+
+    .support-container {
+    max-width: 1440px;
+    }
 
     .section-support {
         padding: 64px 0;
