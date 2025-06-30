@@ -37,12 +37,12 @@
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #ebf8ed;
+  background-color: transparent;
   color: #113916;
   border: 1px solid #113916;
 }
 .hero-button:active {
-  background-color: #ebf8ed;
+  background-color: transparent;
   color: #113916;
   border: none;
 }

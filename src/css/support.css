@@ -120,13 +120,16 @@
     cursor: pointer;
 }
 
-.button-form:hover {
-    background-color: transparent;
-    color: #113916;
-}
-
+.button-form:hover,
 .button-form:focus {
     background-color: transparent;
+    color: #113916;
+    border: 1px solid #113916;
+}
+
+.button-form:active {
+    background-color: transparent;
+    color: #113916;
     border: none;
 }
 
