@@ -27,6 +27,19 @@
   align-items: center;
 }
 
+.footer-nav-item {
+    transition: transform 0.3s ease;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+    transform: scale(1.01);
+}
+
+.footer-nav-item:active {
+    transform: scale(1.02);
+}
+
 .footer-socials {
   display: flex;
   align-items: center;
@@ -52,6 +65,18 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.footer-address-item {
+    transition: transform 0.3s ease;       
+}
+
+.footer-address-item:hover {
+    transform: scale(1.08);
+}
+
+.footer-address-item:active {
+    transform: scale(1.02);
 }
 
 .footer-copy {
