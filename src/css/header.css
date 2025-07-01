@@ -212,15 +212,15 @@
     list-style: none;
 }
 
-.header-nav-item {
+.header-nav-link {
     transition: transform 0.3s ease;
 }
 
-.header-nav-item:hover {
+.header-nav-link:hover {
     transform: scale(1.01);
 }
 
-.header-nav-item:active {
+.header-nav-link:active {
     transform: scale(1.02);
 }
 
@@ -238,15 +238,15 @@
     font-style: normal;
 }
 
-.header-address-item {
+.header-address-link {
     transition: transform 0.3s ease;       
 }
 
-.header-address-item:hover {
+.header-address-link:hover {
     transform: scale(1.08);
 }
 
-.header-address-item:active {
+.header-address-link:active {
     transform: scale(1.02);
 }
 }

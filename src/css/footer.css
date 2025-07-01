@@ -27,16 +27,16 @@
   align-items: center;
 }
 
-.footer-nav-item {
+.footer-link {
     transition: transform 0.3s ease;
 }
 
-.footer-nav-item:hover,
-.footer-nav-item:focus {
+.footer-link:hover,
+.footer-link:focus {
     transform: scale(1.01);
 }
 
-.footer-nav-item:active {
+.footer-link:active {
     transform: scale(1.02);
 }
 
