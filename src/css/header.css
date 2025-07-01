@@ -37,10 +37,6 @@
     height: 32px;
 }
 
-/* .header-nav-logo-svg {
-    width: 82px;
-    height: 31px;
-} */
 
 .header-nav-logo-link {
     -webkit-tap-highlight-color: transparent;
@@ -130,8 +126,7 @@
 }
 
 .mobile-menu-nav-link:hover,
-.mobile-menu-nav-link:active,
-.mobile-menu-nav-link:active{
+.mobile-menu-nav-link:focus,{
     opacity: 0.5;
 }
 
@@ -227,7 +222,7 @@
 }
 
 .header-nav-link:hover, 
-.header-nav-link:active {
+.header-nav-link:focus {
     opacity: 0.5;
 }
 
