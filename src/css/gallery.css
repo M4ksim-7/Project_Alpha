@@ -41,6 +41,10 @@
   width: 100%;
   border-radius: 45px;
 }
+glr-pic {
+  width: 288px;
+  height: 288px;
+}
 /* ---------------tablet version--------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -61,7 +65,7 @@
   .glr-item {
     width: 100%;
     height: 100%;
-    border-radius: 32px;
+
     overflow: hidden;
     position: relative;
   }
@@ -87,7 +91,6 @@
 /* ---------------destop version--------------------------- */
 
 @media screen and (min-width: 1440px) {
-  
   .glr-title {
     font-size: 48px;
   }

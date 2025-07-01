@@ -27,6 +27,19 @@
   align-items: center;
 }
 
+.footer-link {
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    transform: scale(1.01);
+}
+
+.footer-link:active {
+    transform: scale(1.02);
+}
+
 .footer-socials {
   display: flex;
   align-items: center;
@@ -54,6 +67,18 @@
   gap: 16px;
 }
 
+.footer-address-item {
+    transition: transform 0.3s ease;       
+}
+
+.footer-address-item:hover {
+    transform: scale(1.08);
+}
+
+.footer-address-item:active {
+    transform: scale(1.02);
+}
+
 .footer-copy {
   width: 234px;
   font-size: 14px;
@@ -76,7 +101,7 @@
 }
 
 .footer-logo {
-  width: 164px;
+  width: auto;
   height: 70px;
 }
 
@@ -130,8 +155,8 @@
 }
 
 .footer-social-icon {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
 }
 
 }
