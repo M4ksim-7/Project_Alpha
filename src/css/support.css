@@ -101,6 +101,7 @@
 }
 
 .form-textarea {
+    resize: none;
     min-height: 180px;
     min-width: 288px;
 }
