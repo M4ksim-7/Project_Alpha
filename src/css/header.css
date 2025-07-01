@@ -85,7 +85,7 @@
     width: 32px;
     height: 32px;
     -webkit-tap-highlight-color: transparent;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .mobile-close-button:active {
@@ -123,6 +123,16 @@
 .mobile-nav-logo-link {
     -webkit-tap-highlight-color: transparent;
     outline: none;
+}
+
+.mobile-menu-nav-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu-nav-link:hover,
+.mobile-menu-nav-link:active,
+.mobile-menu-nav-link:active{
+    opacity: 0.5;
 }
 
 .mobile-menu-address-container {
@@ -212,16 +222,13 @@
     list-style: none;
 }
 
-.header-nav-item {
-    transition: transform 0.3s ease;
+.header-nav-link {
+   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.header-nav-item:hover {
-    transform: scale(1.01);
-}
-
-.header-nav-item:active {
-    transform: scale(1.02);
+.header-nav-link:hover, 
+.header-nav-link:active {
+    opacity: 0.5;
 }
 
 .header-address {
@@ -236,17 +243,5 @@
     gap: 16px;
     list-style: none;
     font-style: normal;
-}
-
-.header-address-item {
-    transition: transform 0.3s ease;       
-}
-
-.header-address-item:hover {
-    transform: scale(1.08);
-}
-
-.header-address-item:active {
-    transform: scale(1.02);
 }
 }
