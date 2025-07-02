@@ -123,11 +123,15 @@
 }
 
 .mobile-menu-nav-link {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .mobile-menu-nav-link:hover,
-.mobile-menu-nav-link:focus,{
+.mobile-menu-nav-link:focus{
+    opacity: 0.5;
+}
+
+.mobile-menu-nav-link:active {
     opacity: 0.5;
 }
 
@@ -145,7 +149,7 @@
     gap: 16px;
 }
 
- /*==================== Tablet ====================*/
+    /*==================== Tablet ====================*/
 
 @media screen and (min-width: 768px) {
 .header {
@@ -219,11 +223,14 @@
 }
 
 .header-nav-link {
-   transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .header-nav-link:hover, 
 .header-nav-link:focus {
+    opacity: 0.5;
+}
+.header-nav-link:active {
     opacity: 0.5;
 }
 
@@ -239,5 +246,18 @@
     gap: 16px;
     list-style: none;
     font-style: normal;
+}
+
+.header-address-link {
+    transition: opacity 0.3s ease;
+}
+
+.header-address-link:hover,
+.header-address-link:focus{
+    opacity: 0.5;
+}
+
+.header-address-link:active {
+    opacity: 0.5;
 }
 }

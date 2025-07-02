@@ -28,16 +28,16 @@
 }
 
 .footer-link {
-    transition: transform 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.footer-link:hover,
+.footer-link:hover, 
 .footer-link:focus {
-    transform: scale(1.01);
+    opacity: 0.5;
 }
 
 .footer-link:active {
-    transform: scale(1.02);
+  opacity: 0.5;
 }
 
 .footer-socials {
@@ -67,16 +67,17 @@
   gap: 16px;
 }
 
-.footer-address-item {
-    transition: transform 0.3s ease;       
+.footer-address-link {
+  transition: opacity 0.3s ease;
 }
 
-.footer-address-item:hover {
-    transform: scale(1.08);
+.footer-address-link:hover, 
+.footer-address-link:focus {
+    opacity: 0.5;
 }
 
-.footer-address-item:active {
-    transform: scale(1.02);
+.footer-address-link:active {
+  opacity: 0.5;
 }
 
 .footer-copy {
